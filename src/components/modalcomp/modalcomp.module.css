@@ -1,0 +1,85 @@
+
+.coverUp {
+    position: fixed;
+    inset: 0;
+    background-color: #978e8e;
+    z-index: 50;
+}
+.modalBlock {
+    position: absolute;
+    display: block;
+    z-index: 100;
+    width: 30%;
+    height: 30%;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    top: 30%;
+    left: 35%;
+    box-sizing: border-box;
+
+}
+
+.modalPage {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #444;
+    margin-top: 30%;
+    text-transform: capitalize;
+}
+
+.closeBtnBlock {
+    position: absolute;
+    right: 0;
+    padding: 1rem;
+    width: fit-content;
+    padding: 20px;
+}
+
+.closeBtn {
+    font-size: 6rem;
+    color: tomato;
+}
+
+.btnCloser {
+    color: tomato;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+@media screen and (max-width: 999px) {
+    .modalBlock {
+        width: 70%;
+        height: 40%;
+        margin: auto;
+        left: 15%;
+    }
+    
+
+    .modalPage {
+        font-size: 8px;
+    }
+
+    .btnCloser {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .modalBlock {
+        width: 70%;
+        height: 40%;
+        margin: auto;
+        left: 15%;
+    }
+    
+
+    .modalPage {
+        font-size: 8px;
+    }
+
+    .btnCloser {
+        font-size: 1rem;
+    }
+}

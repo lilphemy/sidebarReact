@@ -1,0 +1,155 @@
+section {
+    background-color: antiquewhite;
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    width: 50em;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: block;
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+}
+
+.sideNavHead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    padding: 1rem;
+}
+
+.headingText {
+    color: cornflowerblue;
+    text-align: left;
+    margin-right: 2rem;
+}
+
+.sideNavCont {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    padding-left: 1rem;
+    height: 85%;
+}
+
+.sideNavHead .iconCat {
+    color: tomato;
+    size: 30px;
+}
+
+.iconCat {
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(20, 12, 12, 0.5);
+}
+
+.sideNavCont>div {
+    margin-top: 2em;
+    width: 100%;
+}
+
+.linkSect a {
+    margin-left: 2rem;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #3ad;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.linkSect span {
+    color: rgb(236, 73, 45);
+}
+
+.socialFoot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.socials>span {
+    color: dodgerblue;
+    font-size: 1.5rem;
+}
+
+
+@media screen and (max-width: 999px) {
+    section {
+        width: 30em;
+        justify-content: space-between;
+    }
+
+    .headingText {
+        width: 95%;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+    section {
+        width: 20em;
+        justify-content: space-between;
+    }
+
+    .headingText {
+        width: 95%;
+    }
+    
+}
+
+
+@media screen and (max-width: 400px) {
+
+    section {
+        height: 100vh;
+        width: 15em;
+        
+    }
+
+    .sideNavHead {
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    .headingText {
+        color: cornflowerblue;
+        text-align: left;
+        margin-right: 4rem;
+        
+    }
+
+    .iconCat {
+        font-size: 20px;
+    }
+
+    .sideNavCont {
+        padding-left: 1rem;
+        height: 85%;
+    }
+
+    .sideNavHead .iconCat {
+        font-size: 20px;
+    }
+
+    .linkSect a {
+        font-size: 16px;
+
+    }
+
+    .socials>span {
+        font-size: 1rem;
+    }
+
+    .sideNavCont>div {
+        margin-top: 2em;
+        width: 100%;
+    }
+
+}
